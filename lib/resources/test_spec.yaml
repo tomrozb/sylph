@@ -48,11 +48,10 @@ phases:
       - mkdir $HOME/flutter
       - mv flutter $HOME/flutter
       - export PATH=$PATH:$HOME/flutter/bin:$HOME/flutter/bin/cache/dart-sdk/bin
-      - echo $PATH
       - export PATH="$PATH":"$HOME/.pub-cache/bin"
       - echo $PATH
-      - flutter/bin/flutter doctor -v
-      - ln -s flutter/bin/flutter flutter
+      - $HOME/flutter/bin/flutter doctor -v
+      - ln -s $HOME/flutter/bin/flutter flutter
       - flutter doctor -v
 
   # The pre-test phase includes commands that setup your test environment.
