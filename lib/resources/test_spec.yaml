@@ -50,6 +50,9 @@ phases:
       - export PATH=$PATH:$HOME/flutter/bin:$HOME/flutter/bin/cache/dart-sdk/bin
       - export PATH="$PATH":"$HOME/.pub-cache/bin"
       - echo $PATH
+      - cat ~/.zshrc
+      - cat ~/.bashrc
+      - ls $HOME/flutter/bin
       - $HOME/flutter/bin/flutter doctor -v
       - ln -s $HOME/flutter/bin/flutter flutter
       - flutter doctor -v
