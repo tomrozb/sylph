@@ -45,6 +45,7 @@ phases:
             unzip -qq flutter_macos.zip
         fi
 
+      - mkdir $HOME/flutter
       - mv flutter $HOME/flutter
       - export PATH=$PATH:$HOME/flutter/bin:$HOME/flutter/bin/cache/dart-sdk/bin
       - export PATH="$PATH":"$HOME/.pub-cache/bin"
