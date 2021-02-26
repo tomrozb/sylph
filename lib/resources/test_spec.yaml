@@ -49,6 +49,8 @@ phases:
       #- ls
       #- ls flutter
       #- ls flutter/bin
+      - ls /opt/dev/android-sdk-linux/
+      - ls /opt/dev/android-sdk-linux/platform-tools-1.0.39/
       - mv flutter $HOME/
       - export PATH=$PATH:$HOME/flutter/bin:$HOME/flutter/bin/cache/dart-sdk/bin
       - export PATH="$PATH":"$HOME/.pub-cache/bin"
